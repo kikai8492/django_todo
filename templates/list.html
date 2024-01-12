@@ -1,1 +1,11 @@
-{% extends 'base.html' %} {% block header%} this is list {% endblock %}
+{% extends 'base.html' %} 
+{% block header%} 
+  list 
+{% endblock %}
+{{ block content}}
+  {% for item in object_list %}
+    {{item.title}}
+    {{item.memo}}
+  {% end for %}
+{% endblock %}
+

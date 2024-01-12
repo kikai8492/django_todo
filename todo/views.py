@@ -10,4 +10,4 @@ class TodoList(ListView):
 
 class TodoDetail(DetailView):
   template_name = 'detail.html'
-  model = TodoModel
+  # model = TodoModel

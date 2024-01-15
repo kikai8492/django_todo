@@ -12,9 +12,11 @@
   <div class = "container">
     {% for item in object_list %}
       <div class="alert alert-success" role="alert">
-        {{ item.title }}
-        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+        <p>{{ item.title }}</p>
+        <a href="#" class="btn btn-primary " role="button" aria-pressed="true">編集</a>
+        <a href="#" class="btn btn-danger " role="button" aria-pressed="true">削除</a>
+        <a href="#" class="btn btn-secondary " role="button" aria-pressed="true">詳細</a>
+        </a>
       </div>
     {% endfor %}
   </div>

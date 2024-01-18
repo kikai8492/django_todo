@@ -1,10 +1,14 @@
 from django.db import models
 
+CHOICE = ('danger', 'height')
+
 # Create your models here.
 class TodoModel(models.Model):
   title = models.CharField(max_length=100)
   memo = models.TextField()
-  priority = models.CharField(max_length=50)
+  priority = models.CharField(max_length=50,
+                              choices = CHOICE
+                              )
 
   def __str__(self):
     return self.title

@@ -9,6 +9,7 @@
 {% endblock %}
 
 {% block content %}
+<a href="{% url 'create' %}">Todoの追加</a>
   <div class = "container">
     {% for item in object_list %}
       <div class="alert alert-{{ item.priority}}" role="alert">

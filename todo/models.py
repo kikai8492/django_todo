@@ -1,6 +1,6 @@
 from django.db import models
 
-CHOICE = (('danger', 'height'),('warning', 'normal'),('primary','low'))
+CHOICE = (('danger', '高'),('warning', '中'),('primary','低'))
 
 # Create your models here.
 class TodoModel(models.Model):

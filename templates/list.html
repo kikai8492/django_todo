@@ -4,12 +4,12 @@
   <div class="container">
     <h1 class="display-4">Todo List</h1>
     <p class="lead">todoリストを作成して生産性を高めよう</p>
+    <a href="{% url 'create' %}">Todoの追加</a>
   </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<a href="{% url 'create' %}">Todoの追加</a>
   <div class = "container">
     {% for item in object_list %}
       <div class="alert alert-{{ item.priority}}" role="alert">
